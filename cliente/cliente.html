@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cliente.css">
+    <title>Cadastro de Cliente</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+
+    <main>
+
+        <section class="container">
+            <form>
+                <p id="campos">Prencha os Campos abaixo!</p>
+                <div id="cliente">
+
+                    <input type="text" id="nome" class="input" placeholder="Digite seu nome" required>
+
+
+                    <input type="number" class="input" placeholder="Digite seu cpf" required>
+
+
+                    <input type="email" class="input" placeholder="Digite seu e-mail" required>
+
+                    <input type="number" class="input" placeholder="Digite seu numero de telefone" required>
+
+
+
+                    <div class="input_radio">
+
+                        <p id="genero">Qual é o seu Gênero?</p>
+
+                        <input type="radio" value="masculino" name="genero" class="selecionar" required>
+                        <label for="masculino" class="label">Masculino</label>
+                        <br>
+                        <input type="radio" value="femenino" name="genero" class="selecionar" required>
+                        <label for="femenino" class="label">Femenino</label>
+                        <br>
+                        <input type="radio" value="outros" name="genero" class="selecionar" required>
+                        <label for="outros" class="label">Outros</label>
+                        
+                    </div>
+
+                    <p id="cidade">Onde você mora?</p>
+                    <input type="text" placeholder="Cidade" class="input" required>
+                    <input type="text" placeholder="Estado" class="input" required>
+                    <input type="number" placeholder="Cep" class="input" required>
+
+                    <button type="submit" class="enviar" onclick="enviar()">Enviar</button>
+
+                </div>
+                      
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
+
+<script src="./cliente.js"></script>

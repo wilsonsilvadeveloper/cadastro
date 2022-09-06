@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de funcionários</title>
+    <link rel="stylesheet" href="./funcionario.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Cadastro de Funcionários</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Preencha os campos a seguir!</h2>
+            <form>
+                <input type="text" class="input" name="nome" placeholder="Digite o nome do funcionário" required>
+                <input type="text" class="input" name="idade" placeholder="Diga a data de nascimento do funcionário" required>
+                <input type="number" class="input" name="cpf" placeholder="Digite o cpf do funcionário" required>
+                <input type="email" class="input" name="emal" placeholder="Digite o e-mail do funcionário" required>
+                <input type="number" class="input" name="telefone" placeholder="Digite o numero de telefone do funcionário">
+                <input type="number" class="input" name="cod" placeholder="Cadastre o codigo do funcionário">
+                <div class="input_radio">
+
+                    <p id="genero">Qual é o gênero do funcionário?</p>
+
+                    <input type="radio" value="masculino" name="genero" class="selecionar" required>
+                    <label for="masculino" class="label">Masculino</label>
+                    <br>
+                    <input type="radio" value="femenino" name="genero" class="selecionar" required>
+                    <label for="femenino" class="label">Femenino</label>
+                    <br>
+                    <input type="radio" value="outros" name="genero" class="selecionar" required>
+                    <label for="outros" class="label">Outros</label>
+                    
+                </div>
+
+                <p id="local">Onde o funcionário mora?</p>
+                <input type="text" class="input" name="cidade" placeholder="Cidade" required>
+                <input type="text" class="input" name="estado" placeholder="Estado" required>
+                <input type="number" class="input" name="cep" placeholder="Cep" required>
+
+                <button type="submit" class="enviar" >Enviar</button>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+</html>

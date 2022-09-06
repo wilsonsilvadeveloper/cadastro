@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2? família=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #d0ccd1;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+h1 {
+    color:darkblue;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 2rem;
+    text-align: center;
+    position: absolute;
+    height: auto;
+    width: 450px;
+    padding: 1.4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#h2 {
+    margin-top: 1rem;
+    font-size: 1.22rem;
+    color: darkslateblue;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#botao_escolha {
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.p_ou_c {
+    width: 120px;
+    height: 28px;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: #331a38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.p_ou_c:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+    border: 1px solid black;
+    border-radius: 2rem;
+    transition: 200ms;
+}
+
+.p_ou_c:focus {
+    background-color: darkblue;
+    color: white;
+    border-radius: 2rem;
+    transition: 1s;
+}
+
+.barradepesquisa {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#pesquisar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 350px;
+    height: auto;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.input {
+    width: 100%;
+    height: 1.8rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.buscarpessoa {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 2rem;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #d0ccd1;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.buscarpessoa:hover, .buscarpessoa:focus {
+    background-color: #331a38;
+    color: white;
+    border-radius: 2rem;
+    transition: 1.4s;
+}
+ 
+#buscar_c, #buscar_f {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#cadastrar {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#p1 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: darkslateblue;
+}
+
+#p2 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: darkslateblue;
+    margin-top: 1rem;
+}
+
+#botao_pessoa {
+    display: flex;
+    justify-content: space-around;
+    width: 300px; 
+    margin: auto;
+    height: auto;
+    margin-top: 0.9rem;
+}
+
+
+
+#link_cliente, #link_funcionario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 6.8rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #331a38;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#link_cliente:hover, #link_funcionario:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    transition: 1.4s;
+}
+

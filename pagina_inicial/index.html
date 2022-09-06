@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Cadastro de Pessoas</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <section class="fomrs">
+                <form id="form_tipo">
+                    <div class="conteudo">
+                        <p id="p1">FORMULÁRIO</p>
+                    </div>
+
+                    <div id="escolha">
+                        <h2 id="h2">Você deseja cadastrar ou pesquisar?</h2>
+
+                        <div id="botao_escolha">
+                            <button type="button" id="cadastro" class="p_ou_c" onclick="cadastrar()">Cadastrar</button>
+                            <button type="button" class="p_ou_c" onclick="pesquisar()">Pesquisar</button>
+                        </div>
+                        
+                    </div>
+
+                    <div class="barradepesquisa">
+                        <div id="pesquisar">
+                            <button class="p_ou_c" type="button" onclick="cliente()">Cliente</button>
+                            <button class="p_ou_c" type="button" onclick="funcionarios()">Funcionario</button>    
+                        </div>
+    
+                        <div id="buscar_f" class="buscar">
+                            <input class="input" type="text" placeholder="Nome Completo" required>
+                            <input class="input" type="number" placeholder="Codigo do Funcionario" required>
+                            <button class="buscarpessoa" type="submit" onclick="buscarFuncionario()">Pesquisar</button>
+                        </div>
+    
+                        <div id="buscar_c" class="buscar">
+                            <input class="input" type="text" placeholder="Nome Completo" required>
+                            <input class="input" type="number" placeholder="CPF" required>
+                            <button class="buscarpessoa" type="submit" onclick="pesquisarCliente()">Pesquisar</button>
+                        </div>
+                    </div>
+
+                    <div class="conteudo" id="cadastrar">
+                        <p id="p2">Cadastrar</p>
+                        <div id="botao_pessoa">
+                            <a href="../cliente/cliente.html" class="botao_tipo" id="link_cliente" target="blank">Cliente</a>
+                            <a href="../funcionario/funcionario.html" class="botao_tipo" id="link_funcionario" target="blank">Funcionário</a>
+                        </div>
+                    </div>
+
+                    
+                </form>
+            </section>
+            
+            
+
+    </section>
+    </main>
+    
+</body>
+</html>

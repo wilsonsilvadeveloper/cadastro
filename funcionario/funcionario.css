@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2? família=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    border-bottom: 1px solid white;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 2rem;
+}
+
+body {
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 2rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    border: 1px solid white;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 8rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input {
+    margin-bottom: 1.3rem;
+    outline: 0;
+    height: 2rem;
+    width: 100%;
+    border-radius: 2rem;
+    padding-left: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1rem;
+}
+
+.input::placeholder {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+
+.label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+#genero, #local {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #331a38;
+    font-weight: 800;
+    margin-bottom: 1.4rem;
+}
+
+#genero {
+    align-items: center;
+}
+
+#local {
+    margin-top: 1rem;
+}
+
+.enviar {
+    margin: auto;
+    background-color: #331a38;
+    width: 200px;
+    height: 40px;
+    border-radius: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    transition: 1.4s;
+}
